@@ -116,7 +116,7 @@ func ReadManifest(file string) ([]map[string]string, error) {
 }
 
 func main() {
-	kibanaURL := flag.String("kibana", "http://localhost:5601", "Kibana URL")
+	kibanaURL := flag.String("kibana", "http://localhost:6601", "Kibana URL")
 	dashboard := flag.String("dashboard", "", "Dashboard ID")
 	fileOutput := flag.String("output", "output.json", "Output file")
 	ymlFile := flag.String("yml", "", "Path to the module.yml file containing the dashboards")

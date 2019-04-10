@@ -12,7 +12,7 @@
       "max_buckets": 500,
       "default_time_range_in_days" : 0,
       "max_hosts": 100,
-      "max_events_to_keep_in_viewer": 5000,
+      "max_events_to_keep_in_viewer": 6000,
       "fields" : {
         "mapping" : {
             "timestamp" : "@timestamp",

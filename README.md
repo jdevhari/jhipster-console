@@ -12,7 +12,7 @@ Please refer to the [JHipster Monitoring Documentation](http://jhipster.github.i
 
 ## Quick Start
 
-Start everything by running `docker-compose up -d` in the `bootstrap/` directory, then access Kibana at [localhost:5601](http://localhost:5601) and Zipkin at [localhost:9411](http://localhost:9411).
+Start everything by running `docker-compose up -d` in the `bootstrap/` directory, then access Kibana at [localhost:6601](http://localhost:6601) and Zipkin at [localhost:10411](http://localhost:10411).
 
 ## Contributing
 
