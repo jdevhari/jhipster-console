@@ -1,4 +1,4 @@
-FROM docker.elastic.co/kibana/kibana-oss:6.4.1
+FROM docker.elastic.co/kibana/kibana-oss:7.0.0
 
 ENV ELASTICSEARCH_URL=http://jhipster-elasticsearch:9200
 
