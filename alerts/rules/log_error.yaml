@@ -1,5 +1,5 @@
 # Simple alert that is triggered by ERROR logs
-es_host: jhipster-elasticsearch
+es_host: jhipster-elasticsearch7
 es_port: 10200
 name: log_error
 type: frequency

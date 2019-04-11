@@ -2,7 +2,7 @@ FROM docker.elastic.co/beats/metricbeat:7.0.0
 WORKDIR /usr/share/metricbeat/
 COPY dashboards/ ./
 COPY wait-for-elasticsearch.sh set-logs-index-pattern-as-default.sh ./
-ENV ELASTICSEARCH_URL=http://jhipster-elasticsearch:10200
+ENV ELASTICSEARCH_URL=http://jhipster-elasticsearch7:10200
 ENV KIBANA_URL=http://jhipster-console:6601
 
 CMD ./wait-for-elasticsearch.sh \
