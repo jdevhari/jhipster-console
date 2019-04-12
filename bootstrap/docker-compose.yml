@@ -12,7 +12,7 @@ services:
         #volumes:
         #   - log-data:/usr/share/elasticsearch/data
 
-    jhipster-logstash:
+    jhipster-logstash7:
         image: jhipster/jhipster-logstash:latest
         environment:
             - INPUT_TCP_PORT=6000
@@ -30,21 +30,21 @@ services:
         #volumes:
         #    - ./log-conf/:/usr/share/logstash/pipeline/
 
-    jhipster-console:
+    jhipster-console7:
         image: jhipster/jhipster-console:latest
         ports:
             - 6601:6601
         #environment:
         #    - ELASTICSEARCH_URL=http://jhipster-elasticsearch7:10200
 
-    jhipster-import-dashboards:
+    jhipster-import-dashboards7:
         image: jhipster/jhipster-import-dashboards:latest
         environment:
             - ELASTICSEARCH_URL=http://jhipster-elasticsearc7h:10200
         depends_on:
             - jhipster-elasticsearch7
 
-    jhipster-curator:
+    jhipster-curator7:
         image: jhipster/jhipster-curator:latest
         environment:
             - ES_HOST=jhipster-elasticsearch7
@@ -52,7 +52,7 @@ services:
             - UNIT_COUNT=14
             - UNIT=days
 
-    jhipster-alerter:
+    jhipster-alerter7:
         image: jhipster/jhipster-alerter:latest
         environment:
             - ES_HOST=jhipster-elasticsearch7
@@ -61,7 +61,7 @@ services:
             - ../alerts/rules/:/opt/elastalert/rules/
             - ../jhipster-alerter/config.yaml:/opt/elastalert/config.yaml
 
-    jhipster-zipkin:
+    jhipster-zipkin7:
         image: jhipster/jhipster-zipkin:latest
         environment:
             - ES_HOSTS=http://jhipster-elasticsearch7:10200
