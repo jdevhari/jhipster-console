@@ -1,4 +1,4 @@
-FROM docker.elastic.co/beats/metricbeat:7.0.0
+FROM docker.elastic.co/beats/metricbeat:7.4.2
 WORKDIR /usr/share/metricbeat/
 COPY dashboards/ ./
 COPY wait-for-elasticsearch.sh set-logs-index-pattern-as-default.sh ./
