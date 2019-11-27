@@ -1,0 +1,28 @@
+version: 1
+task_definition:
+  services:
+    jhipster-elasticsearch7:
+      cpu_shares: 100
+      mem_limit: 524288000
+    jhipster-logstash7:
+      cpu_shares: 100
+      mem_limit: 524288000
+    jhipster-console7:
+      cpu_shares: 100
+      mem_limit: 524288000
+    jhipster-import-dashboards7:
+      cpu_shares: 100
+      mem_limit: 524288000
+    jhipster-alerter7:
+      cpu_shares: 100
+      mem_limit: 524288000
+    jhipster-curator7:
+      cpu_shares: 100
+      mem_limit: 524288000
+    jhipster-zipkin7:
+      cpu_shares: 100
+      mem_limit: 524288000
+
+
+
+
